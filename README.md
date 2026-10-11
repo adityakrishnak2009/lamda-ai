@@ -1,9 +1,6 @@
 # Lamda AI
 
-Lamda AI is a Windows desktop assistant with a CustomTkinter chat interface.
-It responds to built-in commands for opening websites and local applications,
-checking the current time, and searching Wikipedia. It can also speak responses
-using Windows text-to-speech.
+Lamda AI is a Windows desktop assistant with a CustomTkinter chat interface. It responds to built-in commands for opening websites and local applications, checking the current time, and searching Wikipedia. It can also speak responses using Windows text-to-speech.
 
 Despite its name, this project does not connect to a large language model.
 
@@ -28,7 +25,13 @@ python app.py
 ```
 
 Type a command in the chat box, such as `open google`, `open chatgpt`,
-`search Saturn`, or `time`.
+`search Saturn`, `time`, or `play music`.
+
+To play a random song, use the `play music` command. The assistant looks in
+`F:\fl songs` and randomly opens one `.mp3`, `.wav`, or `.flac` file. Put your
+music files in that folder, or update the `music_folder` path in `brain.py` to
+match the folder on your computer. The command currently recognizes `play
+music`, not `play song`.
 
 ## Project files
 
