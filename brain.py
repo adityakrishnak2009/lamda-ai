@@ -164,11 +164,6 @@ def respond_to_command(command):
 
         except Exception as e:
             response = str(e)
-    
-    elif "open netmirror" in command:
-
-        response = "Opening NetMirror..."
-        webbrowser.open("https://net22.cc/home")
 
     elif "open hostinger horizon" in command:
 
@@ -177,7 +172,7 @@ def respond_to_command(command):
 
     elif "open vs code" in command:
 
-        vs_code_path = r"C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Visual Studio Code\Visual Studio Code.lnk"
+        vs_code_path = r"#vs code path"
 
         try:
 
@@ -190,7 +185,7 @@ def respond_to_command(command):
 
     elif "open python" in command:
 
-        python_path = r"C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.13\IDLE (Python 3.13 64-bit).lnk"
+        python_path = r"#python path"
 
         try:
 
@@ -201,18 +196,7 @@ def respond_to_command(command):
             
             response = f"Could not open Python: {e}"
 
-    elif "open splice" in command:
 
-        splice_path = r"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Splice\Splice INSTRUMENT.lnk"
-
-        try:
-
-            os.startfile(splice_path)
-            response = "Opening Splice..."
-
-        except Exception as e:
-            
-            response = f"Could not open Splice: {e}"
 
     elif "open f1 12" in command:
 
